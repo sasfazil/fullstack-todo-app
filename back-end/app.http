@@ -1,0 +1,65 @@
+### REGISTER
+
+POST http://localhost:3000/register/
+Content-Type : application/json
+
+{
+  "username": "shaik",
+  "password": "shaik@2024",
+  "email": "shaik@gmail.com"
+}
+
+
+### LOGIN
+POST http://localhost:3000/login/
+Content-Type : application/json
+
+{
+  "username": "fazil",
+  "password": "shaik@2024"
+}
+
+###
+GET http://localhost:3000/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhemlsIiwiaWF0IjoxNzI3MjE4OTA3fQ.zMAua9P3Ne8NP-De3T8_mfsYn5Q1jzRzWXLSzt9WmPU
+### ADD TASKS
+
+POST http://localhost:3000/addtask/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoYWlrIiwiaWF0IjoxNzI3MjE4ODU5fQ.nagm91o0dPhzLDhYKSWaMEu4-FczK9SP0HIv8pLqhHY
+Content-Type : application/json
+
+{
+  "title": "Learn Aws",
+  "description": "Learn Redux and ReduxTool kit",
+  "status": "Pending"
+}
+
+### UPDATE TASKS
+
+PUT http://localhost:3000/updatetask/8befc09b-ce12-4300-85ae-77ce5b0f55d2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhemlsIiwiaWF0IjoxNzI3MTkzNzM0fQ.Uw3ikpMwALkr7yzDcg2x81Pxy51wn1l9_GfaF5J2d6s
+Content-Type : application/json
+
+{
+  "title": "Learn AWS",
+  "description": "Learn Aws and Azure",
+  "status": "Pending"
+}
+
+### DELETE TASKS
+
+DELETE http://localhost:3000/deletetask/88243430-c4d5-484d-96c6-15a72e4100ae
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZhemlsIiwiaWF0IjoxNzI3MTkzNzM0fQ.Uw3ikpMwALkr7yzDcg2x81Pxy51wn1l9_GfaF5J2d6s
+
+
+### UPDATE USER
+
+PUT http://localhost:3000/updateuser/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoYWlrIiwiaWF0IjoxNzI3MjE4ODU5fQ.nagm91o0dPhzLDhYKSWaMEu4-FczK9SP0HIv8pLqhHY
+Content-Type : application/json
+
+{
+  "newUsername": "fazil",
+  "email": "shaik@gmail.com",
+  "password": "shaik@2021"
+}

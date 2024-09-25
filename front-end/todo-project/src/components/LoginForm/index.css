@@ -1,0 +1,91 @@
+.common-site {
+  height: 100vh;
+  background-color: rgb(43, 109, 196);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.common-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  max-width: 20rem;
+}
+
+.common-inputs-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.common-inputs-container > input {
+  outline: none;
+  padding: 2px;
+  border: 1px solid grey;
+  border-radius: 2px;
+  margin-top: 0.3rem;
+}
+
+.common-inputs-container > input:focus-within {
+  box-shadow: 3px 3px 5px #2b6dc4;
+  border: 1px solid #2b6dc4;
+}
+
+.password-container {
+  border: 1px solid grey;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2px;
+  padding: 1px;
+  margin-top: 0.3rem;
+}
+
+.password-container > input {
+  outline: none;
+  padding: 2px;
+  border-width: 0;
+  flex-grow: 1;
+}
+
+.password-container:focus-within {
+  box-shadow: 3px 3px 5px #2b6dc4;
+  border: 1px solid #2b6dc4;
+}
+
+.eye-btn {
+  background-color: transparent;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.submit-btn {
+  padding: 0.5rem 1rem;
+  background-color: #2b6dc4;
+  color: #ffffff;
+  border-width: 0;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 1rem;
+  font-size: 0.6rem;
+}
+
+.common-redirect-btn {
+  background-color: transparent;
+  border-width: 0;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.common-redirect-btn:hover {
+  color: #303ec1;
+  text-decoration: underline;
+}

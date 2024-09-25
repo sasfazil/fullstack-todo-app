@@ -1,0 +1,13 @@
+.signin-site {
+  background-color: rgb(45, 26, 85);
+}
+
+.common-inputs-container > input:focus-within,
+.password-container:focus-within {
+  box-shadow: 3px 3px 5px rgb(51, 36, 84);
+  border: 1px solid rgb(51, 36, 84);
+}
+
+.register-submit-btn {
+  background-color: rgb(102, 72, 167);
+}
